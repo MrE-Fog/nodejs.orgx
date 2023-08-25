@@ -52,7 +52,7 @@ jobs:
 
     steps:
       - name: Git Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
         with:
           # We only need to fetch the latest commit of the `base_ref` here for the analysis steps
           fetch-depth: 1
@@ -97,7 +97,7 @@ jobs:
 
     steps:
       - name: Git Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
         with:
           # Here we apply the Environment Variable created above on the "Calculate Commits to Checkout"
           fetch-depth: ${{ needs.base.outputs.fetch_depth }}
@@ -139,7 +139,7 @@ jobs:
 
     steps:
       - name: Git Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
         with:
           # We only need to fetch the latest commit of the `base_ref` here for the analysis steps
           fetch-depth: 1
